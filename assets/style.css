@@ -15,6 +15,7 @@
 
 body {
   font-family: 'Poppins';
+  background: #2c3639;
 }
 
 header {
@@ -127,6 +128,7 @@ main {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+  color: white;
 }
 
 footer {
