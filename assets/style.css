@@ -57,8 +57,8 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+nav a.active,
+nav a:hover {
   background: var(--light);
   transition: 0.5s;
 }
@@ -86,6 +86,48 @@ a:hover {
 }
 .jumbotron img {
   border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-contact {
+  margin: 10px;
+}
+
+.picture {
+  flex-grow: 1;
+  margin: 15px;
+  border-radius: 15%;
+}
+
+.row {
+  flex: 30%;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.main {
+  flex: 70%;
+  text-align: center;
+}
+
+#about img {
+  margin: 35px;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 @media (max-width: 952px) {
@@ -140,14 +182,17 @@ a:hover {
   }
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: 767px) {
+  .row {
+    padding: 0;
+  }
+  .picture {
+    width: 150px;
+  }
 }
 
-.picture {
-  flex-grow: 1;
-  margin: 20px;
-  border-radius: 25%;
-  /* flex-direction: column; */
+@media (max-width: 425px) {
+  .picture {
+    width: 75px;
+  }
 }
