@@ -139,3 +139,15 @@ a:hover {
     left: 0;
   }
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picture {
+  flex-grow: 1;
+  margin: 20px;
+  border-radius: 25%;
+  /* flex-direction: column; */
+}
