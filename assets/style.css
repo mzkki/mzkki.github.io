@@ -15,7 +15,6 @@
 
 body {
   font-family: 'Poppins';
-  height: 200vh;
 }
 
 header {
@@ -136,6 +135,7 @@ footer {
   background-color: var(--dark);
   text-align: center;
   font-weight: lighter;
+  margin-top: 50px;
 }
 
 footer a {
