@@ -130,6 +130,18 @@ main {
   margin-top: 20px;
 }
 
+footer {
+  padding: 20px;
+  color: white;
+  background-color: var(--dark);
+  text-align: center;
+  font-weight: lighter;
+}
+
+footer a {
+  color: white;
+}
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 20px;
