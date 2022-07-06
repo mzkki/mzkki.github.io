@@ -142,6 +142,10 @@ main {
   margin-bottom: 20px;
 }
 
+.contact a {
+  color: white;
+}
+
 footer {
   padding: 20px;
   color: white;
