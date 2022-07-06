@@ -142,7 +142,12 @@ main {
   margin-bottom: 20px;
 }
 
-.contact a {
+.featured-link {
+  color: white;
+}
+
+.featured-link:hover,
+.featured-link:active {
   color: white;
 }
 
