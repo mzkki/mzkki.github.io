@@ -80,7 +80,7 @@ nav a:hover {
 .jumbotron {
   height: 350px;
   padding-top: 75px;
-  background-color: var(--light);
+  /* background-color: var(--light); */
   text-align: center;
   color: white;
 }
