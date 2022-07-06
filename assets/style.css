@@ -81,11 +81,20 @@ nav a:hover {
   height: 350px;
   padding-top: 75px;
   /* background-color: var(--light); */
+  background: url(/assets/background-image.jpg), var(--dark);
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-position-y: 400px;
   text-align: center;
   color: white;
 }
-.jumbotron img {
+.featured-image {
   border-radius: 50%;
+  width: 125px;
+  max-height: 125px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .container {
@@ -123,6 +132,8 @@ aside {
 
 #about img {
   margin: 35px;
+  width: 150px;
+  max-height: 150px;
 }
 
 main {
@@ -163,6 +174,8 @@ footer {
 footer a {
   color: white;
 }
+
+/* media query */
 
 @media (max-width: 952px) {
   label.logo {
