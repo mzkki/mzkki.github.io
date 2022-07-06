@@ -111,7 +111,7 @@ nav a:hover {
   flex-grow: 1;
   margin: 15px;
   border-radius: 15%;
-  width: 200px;
+  max-width: 200px;
 }
 
 .row {
