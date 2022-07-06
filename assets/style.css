@@ -137,6 +137,11 @@ main {
   color: white;
 }
 
+.contact {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 footer {
   padding: 20px;
   color: white;
