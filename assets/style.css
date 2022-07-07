@@ -130,6 +130,10 @@ aside {
   text-align: center;
 }
 
+article p {
+  margin-bottom: 50px;
+}
+
 #about img {
   margin: 35px;
   width: 150px;
