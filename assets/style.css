@@ -130,6 +130,10 @@ aside {
   text-align: center;
 }
 
+.profile-picture {
+  margin: 10px 0;
+}
+
 article p {
   margin-bottom: 50px;
 }
