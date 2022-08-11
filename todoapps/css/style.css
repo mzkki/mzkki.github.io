@@ -180,7 +180,7 @@ input[type='date'],
   background-color: #5f30e2;
   color: #fff;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 100px;
   padding: 16px;
   position: fixed;
   z-index: 1;
