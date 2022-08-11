@@ -173,11 +173,10 @@ document.addEventListener('DOMContentLoaded', function () {
       return true
     }
   }
-
   document.addEventListener(SAVED_EVENT, () => {
     console.log(localStorage.getItem(STORAGE_KEY))
     const x = document.getElementById('snackbar')
-    console.warn(x.classList)
+    x.innerText = "Berhasil Mengubah Data"
     x.className = "show"
     setTimeout(() => {
       x.className = x.className.replace("show", "")
