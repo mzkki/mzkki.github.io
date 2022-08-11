@@ -46,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
         completedTODOList.append(todoElement)
       }
     }
+
+    const nothing = document.createElement('h2')
+    nothing.classList.add('item', 'shadow')
+    nothing.style.padding = "40px"
+    if (uncompletedTODOList.innerHTML == '') {
+      nothing.innerText = "Great !, you haven't todo yet"
+      uncompletedTODOList.append(nothing)
+    } else {
+      nothing.innerText = "Come on, you can do it!"
+      completedTODOList.append(nothing)
+    }
   })
 
   const makeTodo = (todoObject) => {
@@ -174,14 +185,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   document.addEventListener(SAVED_EVENT, () => {
-    console.log(localStorage.getItem(STORAGE_KEY))
     const x = document.getElementById('snackbar')
     x.innerText = "Berhasil Mengubah Data"
     x.className = "show"
     setTimeout(() => {
       x.className = x.className.replace("show", "")
     }, 3000)
-    console.warn(x.classList)
   })
 
   const loadDataFromStorage = () => {
