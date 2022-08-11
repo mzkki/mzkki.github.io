@@ -85,6 +85,7 @@ input[type='date'] {
   box-sizing: border-box;
   margin-bottom: 8px;
   font-size: 24px;
+  width: 100%;
 }
 
 .btn-submit {
