@@ -1,0 +1,77 @@
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 2s;
+}
+
+.main-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.picture-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.main-observer.main-hidden:nth-child(3) {
+  transition-delay: 200ms;
+}
+.main-observer.main-hidden:nth-child(2) {
+  transition-delay: 400ms;
+}
+.main-observer.main-hidden:nth-child(1) {
+  transition-delay: 600ms;
+}
+
+.item-observer.hidden:nth-child(1) {
+  transition-delay: 800ms;
+}
+.item-observer.hidden:nth-child(2) {
+  transition-delay: 1000ms;
+}
+.item-observer.hidden:nth-child(3) {
+  transition-delay: 1200ms;
+}
+.item-observer.hidden:nth-child(4) {
+  transition-delay: 1400ms;
+}
+
+.about-observer.hidden:nth-child(1) {
+  transition-delay: 200ms;
+}
+.about-observer.hidden:nth-child(2) {
+  transition-delay: 600ms;
+}
+.about-observer.hidden:nth-child(3) {
+  transition-delay: 1200ms;
+}
+
+.picture.hidden:nth-child(1) {
+  transition-delay: 200ms;
+}
+.picture.hidden:nth-child(2) {
+  transition-delay: 400ms;
+}
+.picture.hidden:nth-child(3) {
+  transition-delay: 600ms;
+}
+.picture.hidden:nth-child(4) {
+  transition-delay: 800ms;
+}
+.picture.hidden:nth-child(5) {
+  transition-delay: 1000ms;
+}
+.picture.hidden:nth-child(6) {
+  transition-delay: 1200ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

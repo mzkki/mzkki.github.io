@@ -6,160 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello, World!</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/oberserver.css" />
     <script
       src="https://kit.fontawesome.com/412caee2e0.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="shortcut icon"
-      href="assets/aku-modified.png"
+      href="assets/image/aku-modified.png"
       type="image/x-icon"
     />
   </head>
   <body>
     <header>
-      <div class="jumbotron">
-        <img
-          src="https://lh3.googleusercontent.com/pw/AM-JKLXA_qdlhwqp1W5bwKuIr6lxkaSsfrHq5vP6sb36Pf5F0kfc42rbRd1YEHYbs-ULkgKA51TmOo8B0pGX5O6ll7bRmywyAdIxEcxy252SVRtKofrEYvowAdM5ZgAER2IuI7dfTwTzACi9wDt33XFvZLOUDA=w361-h640-no?authuser=0"
-          alt="Foto Profile"
-          class="featured-image"
-        />
-        <h2>Haris Muzakki Indra</h2>
-        <em>Software Engineer in the Future</em>
-      </div>
-      <nav>
+      <nav id="nav">
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Mzkki</label>
-        <ul>
+        <label class="logo">Haris</label>
+        <ul id="links">
           <li><a href="#" id="link">Home</a></li>
           <li><a href="#about" id="link">About</a></li>
           <li><a href="#gallery" id="link">Gallery</a></li>
           <li><a href="#contact" id="link">Contact</a></li>
         </ul>
       </nav>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="main">
+            <h1 class="main-observer main-hidden">Hi, I am</h1>
+            <h1 class="main-observer main-hidden">Haris Muzakki Indra</h1>
+            <p class="main-observer main-hidden">
+              I am a college student at Mulia University Balikpapan
+            </p>
+            <div class="medsos">
+              <div class="item">
+                <a
+                  class="item-observer hidden"
+                  href="https://instagram.com/harismzkki"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  class="item-observer hidden"
+                  href="https://www.linkedin.com/in/harismzkki/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  class="item-observer hidden"
+                  href="https://github.com/mzkki"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  class="item-observer hidden"
+                  href="https://wa.me/+628115430120?text=Halo,+harismzkki"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <aside class="row">
+            <img
+              src="assets/image/me2.png"
+              alt="Foto saya"
+              class="main-picture picture-hidden"
+            />
+          </aside>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="container">
-        <div class="main">
-          <div id="content">
-            <article id="about" class="card">
-              <h2>About Me</h2>
-              <img
-                src="https://lh3.googleusercontent.com/pw/AM-JKLX5AecayNRuKrNNcRMDBIuek8y7T44iG2iJjwxIu_lzqIerAX_EMFgZNUo63Iq5SsfFC54O7rO_cJC0Rx2iiSwlCr1aRqhvfM3x9mT3inMkf8ZuSDdUIxUqtZsUOdozDwyX3uV2LIo_slk87krhD89rKQ=w480-h640-no?authuser=0"
-                alt="profile"
-                class="featured-image"
-              />
-              <p>
-                Hi, My name is Haris Muzakki, I am a new student at one of the
-                universities in Balikpapan and is studying the world of
-                programming, so that I can realize my goals, namely as a
-                Programmer. I think programmers are jobs that will be sought in
-                the future, because in the future, everything will change, maybe
-                in the future the workers will be replaced by robots.
-              </p>
-            </article>
-            <article id="gallery" class="card">
-              <h2>Gallery</h2>
-              <div class="container">
+      <div class="content">
+        <div id="content">
+          <article id="about" class="card">
+            <h2 class="mb about-observer main-hidden">About Me</h2>
+            <div class="main-container">
+              <div class="about-main">
                 <img
-                  src="https://source.unsplash.com/150x150?home"
-                  class="picture"
-                />
-                <img
-                  src="https://source.unsplash.com/150x150?person"
-                  class="picture"
-                />
-                <img
-                  src="https://source.unsplash.com/150x150?code"
-                  class="picture"
-                />
-                <img
-                  src="https://source.unsplash.com/150x150?computer"
-                  class="picture"
-                />
-                <img
-                  src="https://source.unsplash.com/150x150?mountain"
-                  class="picture"
-                />
-                <img
-                  src="https://source.unsplash.com/150x150?nature"
-                  class="picture"
-                />
-              </div>
-            </article>
-            <article id="contact" class="card">
-              <h2>Contact</h2>
-              <div class="contact">
-                <h5>
-                  <a
-                    href="mailto: 08harismu@gmail.com"
-                    class="featured-link"
-                    target="_blank"
-                    >08harismu@gmail.com</a
-                  >
-                </h5>
-                <h5>
-                  <a
-                    href="tel:+628115430120"
-                    class="featured-link"
-                    target="_blank"
-                    >+62 811-5430-120</a
-                  >
-                </h5>
-              </div>
-              <h3>And Also find me On</h3>
-              <div class="container">
-                <div class="item-contact">
-                  <a href="https://instagram.com/harismzkki" target="_blank"
-                    ><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-                      alt="instagram logo"
-                      width="35px"
-                  /></a>
-                </div>
-                <div class="item-contact">
-                  <a href="https://github.com/mzkki" target="_blank"
-                    ><img
-                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                      alt="github logo"
-                      width="35px"
-                  /></a>
-                </div>
-                <div class="item-contact">
-                  <a
-                    href="https://wa.me/628115430120?text=Halo,%20Haris%20Muzakki"
-                    target="_blank"
-                    ><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
-                      alt="wa logo"
-                      width="35px"
-                  /></a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="row">
-          <aside>
-            <article class="profile card">
-              <header>
-                <h2>My Profile</h2>
-                <img
-                  src="https://lh3.googleusercontent.com/pw/AM-JKLXA_qdlhwqp1W5bwKuIr6lxkaSsfrHq5vP6sb36Pf5F0kfc42rbRd1YEHYbs-ULkgKA51TmOo8B0pGX5O6ll7bRmywyAdIxEcxy252SVRtKofrEYvowAdM5ZgAER2IuI7dfTwTzACi9wDt33XFvZLOUDA=w361-h640-no?authuser=0"
+                  src="https://lh3.googleusercontent.com/pw/AM-JKLX5AecayNRuKrNNcRMDBIuek8y7T44iG2iJjwxIu_lzqIerAX_EMFgZNUo63Iq5SsfFC54O7rO_cJC0Rx2iiSwlCr1aRqhvfM3x9mT3inMkf8ZuSDdUIxUqtZsUOdozDwyX3uV2LIo_slk87krhD89rKQ=w480-h640-no?authuser=0"
                   alt="profile"
-                  width="150px"
-                  class="featured-image profile-picture"
+                  class="featured-image about-observer hidden"
                 />
-              </header>
-              <section>
-                <h4>Haris Muzakki Indra</h4>
-                <p>Balikpapan, 8 Desember 2004</p>
-              </section>
-            </article>
-          </aside>
+              </div>
+              <aside class="about-row about-observer hidden">
+                <p>
+                  Hi, my name is Haris. 18 years old man from Indonesia. Not
+                  much experience in programming, but i'll keep learning. You
+                  can check my Curriculum Vitae below
+                </p>
+                <a
+                  href="assets/Haris Muzakki - CV.pdf"
+                  download="me2.png"
+                  class="downloaded-cv"
+                  >Download CV</a
+                >
+              </aside>
+            </div>
+          </article>
+          <article id="gallery" class="card">
+            <h2 class="mb main-hidden">Gallery</h2>
+            <div class="main-container">
+              <img
+                src="https://picsum.photos/id/100/200"
+                class="picture hidden"
+              />
+              <img
+                src="https://picsum.photos/id/1003/200"
+                class="picture hidden"
+              />
+              <img
+                src="https://picsum.photos/id/0/200"
+                class="picture hidden"
+              />
+              <img
+                src="https://picsum.photos/id/1022/200"
+                class="picture hidden"
+              />
+              <img
+                src="https://picsum.photos/id/1020/200"
+                class="picture hidden"
+              />
+              <img
+                src="https://picsum.photos/id/1/200"
+                class="picture hidden"
+              />
+            </div>
+          </article>
+          <article id="contact" class="card">
+            <h2>Contact</h2>
+            <div class="contact">
+              <a
+                href="mailto: 08harismu@gmail.com"
+                class="contact-link"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a href="tel:+628115430120" class="contact-link" target="_blank"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+            </div>
+            <h3 class="thin-text">And Also find me On</h3>
+            <div class="main-container">
+              <div class="item-contact">
+                <a href="https://instagram.com/harismzkki" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/harismzkki/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mzkki" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://wa.me/+628115430120?text=Halo,+harismzkki"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </main>
@@ -170,5 +187,11 @@
       </p>
     </footer>
     <script src="assets/active.js"></script>
+    <script src="assets/scroll.js"></script>
+    <script src="assets/observer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/412caee2e0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

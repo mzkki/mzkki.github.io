@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll("#link")
+const navLinks = document.querySelectorAll('#link')
 
 for (link of navLinks) {
   link.addEventListener('click', function (event) {
@@ -29,4 +29,4 @@ for (link of navLinks) {
       navLinks[2].setAttribute('class', '')
     }
   })
-} 
+}

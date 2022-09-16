@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --dark: #576f72;
-  --light: #7d9d9c;
+  --dark: #73777b;
+  --light: aliceblue;
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Poppins';
-  background: #2c3639;
+  background: var(--dark);
 }
 
 header {
@@ -23,16 +23,25 @@ header {
 }
 
 nav {
-  position: sticky;
-  background: var(--dark);
+  position: static;
+  background-color: var(--light);
   height: 60px;
   width: 100%;
   top: 0;
-  /* box-shadow: 0 2px 20px; */
+  transition: all 0.5s;
+}
+
+.sticky {
+  position: sticky;
+  color: white;
+  background-color: var(--dark);
+  padding: 0 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 label.logo {
-  color: white;
+  /* color: black; */
   font-size: 25px;
   line-height: 60px;
   padding: 0 100px;
@@ -50,22 +59,22 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   font-size: 15px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  color: black;
 }
 
 nav a.active,
 nav a:hover {
-  background: var(--light);
+  background: rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 
 .checkbtn {
   font-size: 20px;
-  color: white;
+  /* color: white; */
   float: right;
   line-height: 60px;
   margin-right: 50px;
@@ -77,18 +86,16 @@ nav a:hover {
   display: none;
 }
 
-.jumbotron {
-  height: 350px;
-  padding-top: 75px;
-  /* background-color: var(--light); */
-  background: url(/assets/background-image.jpg), var(--dark);
-  background-position: center;
-  background-attachment: fixed;
-  background-blend-mode: darken;
-  background-position-y: 400px;
-  text-align: center;
-  color: white;
+#links {
+  background-color: var(--light);
+  transition: all 0.5s;
 }
+
+.jumbotron {
+  height: 100vh;
+  background-color: var(--light);
+}
+
 .featured-image {
   border-radius: 50%;
   width: 125px;
@@ -97,7 +104,11 @@ nav a:hover {
   object-position: center;
 }
 
-.container {
+.mb {
+  margin-bottom: 50px;
+}
+
+.main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -105,6 +116,51 @@ nav a:hover {
 
 .item-contact {
   margin: 10px;
+  font-size: 25px;
+}
+
+.item-contact a {
+  margin: 10px;
+  color: white;
+}
+
+.medsos {
+  display: inline;
+}
+
+.item {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.item a {
+  margin: 0 40px;
+  color: black;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.fa-linkedin-in,
+.fa-github,
+.fa-instagram {
+  padding: 0 2px 0 7px;
+}
+
+.fa-whatsapp {
+  padding: 7px;
+}
+
+.item a:hover {
+  color: white;
+  background-color: black;
+}
+
+.item a:first-child {
+  margin-left: 0;
+}
+
+.item a:last-child {
+  margin-right: 0;
 }
 
 .picture {
@@ -114,19 +170,45 @@ nav a:hover {
   max-width: 200px;
 }
 
-.row {
-  flex: 30%;
-  text-align: center;
-  padding-left: 20px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 250px;
+  align-items: center;
+  padding-top: 10vh;
 }
 
-aside {
-  position: sticky;
-  top: 100px;
+.row {
+  flex: 40%;
+  margin-left: 5px;
+  text-align: center;
 }
 
 .main {
-  flex: 70%;
+  flex: 40%;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.main-picture {
+  width: 500px;
+}
+
+.about-row {
+  flex: 40%;
+  margin-left: 25px;
+  text-align: left;
+  padding-right: 100px;
+}
+
+.about-main {
+  flex: 40%;
+  margin-right: 25px;
+  text-align: right;
+}
+
+.content {
   text-align: center;
 }
 
@@ -135,11 +217,10 @@ aside {
 }
 
 article p {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 #about img {
-  margin: 35px;
   width: 150px;
   max-height: 150px;
 }
@@ -148,17 +229,41 @@ main {
   padding: 20px;
 }
 
+.downloaded-cv {
+  border-radius: 100px;
+  border: 2px solid white;
+  padding: 5px 15px;
+  background: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.downloaded-cv:hover {
+  background-color: white;
+  color: var(--dark);
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 20px;
-  margin-top: 20px;
+  margin: 50px 400px;
+  padding: 50px;
   color: white;
 }
 
 .contact {
   padding: 10px;
   margin-bottom: 20px;
+}
+
+.thin-text {
+  font-weight: 100;
+}
+
+.contact-link {
+  font-size: 25px;
+  color: white;
+  margin: 20px;
 }
 
 .featured-link {
@@ -172,52 +277,80 @@ main {
 
 footer {
   padding: 20px;
-  color: white;
-  background-color: var(--dark);
+  color: black;
+  background-color: var(--light);
   text-align: center;
   font-weight: lighter;
   margin-top: 50px;
 }
 
 footer a {
-  color: white;
+  color: black;
 }
 
 /* media query */
+@media (max-width: 1440px) {
+  .card {
+    margin: 50px 200px;
+  }
 
-@media (max-width: 952px) {
+  .item a {
+    margin: 0 35px;
+  }
+}
+
+@media (max-width: 1280px) {
   label.logo {
     font-size: 20px;
-    padding-left: 50px;
+    padding-left: 100px;
   }
   nav ul {
-    margin-right: 30px;
+    margin-right: 100px;
   }
-  nav ul li a {
-    font-size: 13px;
+  .main-container {
+    margin: 0 50px;
+  }
+  .main-picture {
+    width: 450px;
+  }
+  .container {
+    margin: 0 100px;
+  }
+  .sticky {
+    padding: 0;
+  }
+  .card {
+    margin: 25px 50px;
+    padding: 50px 20px;
+  }
+  .item a {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 912px) {
+  .main-picture {
+    width: 300px;
+  }
+  .container {
+    padding-top: 30vh;
   }
 }
 
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
+    margin-right: 100px;
   }
-  nav {
-    position: fixed;
-    top: 0;
-  }
-  .jumbotron {
-    margin-top: 50px;
-  }
-  ul {
+  #links {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: var(--light);
+    background-color: aliceblue;
     top: 60px;
     left: 1000px;
     text-align: center;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s;
   }
   nav ul li {
     display: block;
@@ -235,22 +368,147 @@ footer a {
   #check:checked ~ ul {
     left: 0;
   }
+  .container {
+    margin: 0 100px;
+    padding-top: 20vh;
+  }
+  .main-picture {
+    width: 300px;
+  }
+  .item a {
+    margin: 0 25px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .container {
+    padding-top: 20vh;
+  }
   .row {
     padding: 0;
+    margin: 0;
+  }
+  .checkbtn {
+    margin-right: 50px;
+  }
+  label.logo {
+    padding-left: 50px;
+  }
+  .main {
+    margin: 0;
   }
   .picture {
     width: 150px;
   }
-  aside {
-    position: static;
+  .container {
+    margin: 0 50px;
+    padding-top: 10vh;
+  }
+  .main-container {
+    margin: 0 20px;
+  }
+  .card {
+    margin: 10px 20px;
+  }
+  .item a {
+    margin: 0 25px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 540px) {
   .picture {
     width: 75px;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .main {
+    text-align: center;
+    font-size: 10pt;
+  }
+  .about-row {
+    text-align: center;
+    padding: 0;
+    margin: 10px 10px;
+  }
+  .about-main {
+    text-align: center;
+    padding: 0;
+    margin-left: 25px;
+  }
+  .container {
+    padding-top: 10vh;
+  }
+  .item a {
+    margin: 0 18px;
+  }
+  .item-contact {
+    margin: 0;
+    font-size: 23px;
+  }
+  .main-container {
+    margin: 10px;
+  }
+  .item-contact a {
+    margin: 10px;
+    color: white;
+  }
+  .main-picture {
+    width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .item a {
+    margin: 0 10px;
+  }
+  .item-contact {
+    margin: 0;
+    font-size: 20px;
+  }
+  .main-container {
+    margin: 20px;
+  }
+  .item-contact a {
+    margin: 5px;
+    color: white;
+  }
+  .main-picture {
+    width: 200px;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    align-items: baseline;
+  }
+  .item {
+    font-size: 25px;
+  }
+  .item a {
+    margin: 0 4px;
+  }
+  .main {
+    font-size: 10pt;
+  }
+  .item-contact {
+    margin: 0;
+    font-size: 18px;
+  }
+  .main-container {
+    margin: 15px;
+  }
+  .item-contact a {
+    margin: 3px;
+    color: white;
+  }
+  .downloaded-cv {
+    font-size: 7pt;
+  }
+}
+
+@media (max-height: 667px) {
+  .container {
+    padding-top: 1vh;
   }
 }
