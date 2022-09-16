@@ -192,7 +192,7 @@ nav a:hover {
 }
 
 .main-picture {
-  width: 500px;
+  width: 70%;
 }
 
 .about-row {
@@ -310,9 +310,9 @@ footer a {
   .main-container {
     margin: 0 50px;
   }
-  .main-picture {
+  /* .main-picture {
     width: 450px;
-  }
+  } */
   .container {
     margin: 0 100px;
   }
@@ -329,9 +329,9 @@ footer a {
 }
 
 @media (max-width: 912px) {
-  .main-picture {
+  /* .main-picture {
     width: 300px;
-  }
+  } */
   .container {
     padding-top: 30vh;
   }
@@ -372,9 +372,9 @@ footer a {
     margin: 0 100px;
     padding-top: 20vh;
   }
-  .main-picture {
+  /* .main-picture {
     width: 300px;
-  }
+  } */
   .item a {
     margin: 0 25px;
   }
@@ -453,9 +453,9 @@ footer a {
     margin: 10px;
     color: white;
   }
-  .main-picture {
+  /* .main-picture {
     width: 200px;
-  }
+  } */
 }
 
 @media (max-width: 320px) {
@@ -473,9 +473,9 @@ footer a {
     margin: 5px;
     color: white;
   }
-  .main-picture {
+  /* .main-picture {
     width: 200px;
-  }
+  } */
 }
 
 @media (max-width: 280px) {
