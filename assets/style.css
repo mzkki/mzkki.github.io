@@ -23,12 +23,13 @@ header {
 }
 
 nav {
-  position: static;
+  position: relative;
   background-color: var(--light);
   height: 60px;
   width: 100%;
   top: 0;
   transition: all 0.5s;
+  z-index: 1;
 }
 
 .sticky {
@@ -37,7 +38,6 @@ nav {
   background-color: var(--dark);
   padding: 0 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 1;
 }
 
 label.logo {
@@ -91,8 +91,12 @@ nav a:hover {
   transition: all 0.5s;
 }
 
+/* main {
+  z-index: 1;
+} */
+
 .jumbotron {
-  height: 100vh;
+  height: 95vh;
   background-color: var(--light);
 }
 
