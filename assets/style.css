@@ -137,7 +137,7 @@ nav a:hover {
   margin-top: 10px;
 }
 
-.item a {
+.item a.show {
   margin: 0 40px;
   color: black;
   transition: all 0.5s;
@@ -154,9 +154,10 @@ nav a:hover {
   padding: 7px;
 }
 
-.item a:hover {
+.item a.show:hover {
   color: white;
   background-color: black;
+  transition-delay: 0ms;
 }
 
 .item a:first-child {
