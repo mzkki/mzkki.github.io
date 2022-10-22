@@ -287,6 +287,16 @@ footer a {
   color: black;
 }
 
+#preloader {
+  background: white url(image/preloader.gif) no-repeat center center;
+  /* size: 100%; */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: 0.5s;
+}
+
 /* media query */
 @media (max-width: 1440px) {
   .card {
