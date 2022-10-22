@@ -288,22 +288,13 @@ footer a {
 }
 
 #preloader {
-  background: #73777b;
+  background: #e3f4fd url(image/loader.gif) no-repeat center center;
   /* size: 100%; */
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
   transition: 0.5s;
-}
-
-#preloader svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
 }
 
 /* media query */
