@@ -1,5 +1,5 @@
 const loader = document.getElementById('preloader')
 
 window.addEventListener('load', () => {
-  loader.style.display = "none"
+  loader.style.opacity = 0
 })
