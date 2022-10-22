@@ -288,7 +288,7 @@ footer a {
 }
 
 #preloader {
-  background: white url(image/preloader.gif) no-repeat center center;
+  background: white url(image/loader.gif) no-repeat center center;
   /* size: 100%; */
   height: 100vh;
   width: 100%;
