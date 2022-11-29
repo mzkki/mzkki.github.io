@@ -215,6 +215,14 @@ nav a:hover {
   margin: 10px 0;
 }
 
+.main-image {
+  border-radius: 50%;
+  width: 125px;
+  max-height: 125px;
+  object-fit: cover;
+  object-position: 0 -15px;
+}
+
 article p {
   margin-bottom: 15px;
 }
