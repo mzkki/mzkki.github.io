@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello, World!</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/oberserver.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <script
       src="https://kit.fontawesome.com/412caee2e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
     <link
@@ -16,57 +27,88 @@
       href="assets/image/rounded320.png"
       type="image/x-icon"
     />
+    <style>
+      * {
+        font-family: 'Poppins';
+      }
+    </style>
   </head>
   <body>
-    <div id="preloader">
-    </div>
+    <div id="preloader"></div>
     <header>
-      <nav id="nav">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Haris</label>
-        <ul id="links">
-          <li><a href="#" id="link">Home</a></li>
-          <li><a href="#about" id="link">About</a></li>
-          <li><a href="#gallery" id="link">Gallery</a></li>
-          <li><a href="#contact" id="link">Contact</a></li>
-        </ul>
+      <nav
+        class="navbar sticky-top navbar-expand-sm shadow-sm bg-body-tertiary"
+      >
+        <div class="container justify-content-between">
+          <a class="navbar-brand fw-semibold" href="#">Haris</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="main">
+      <div class="container">
+        <div class="row jumbotron align-items-center">
+          <div class="col-sm-6">
             <h1 class="main-observer main-hidden">Hi, I am</h1>
             <h1 class="main-observer main-hidden">Haris Muzakki Indra</h1>
             <p class="main-observer main-hidden">
               I am just an ordinary people who interest in technology
             </p>
-            <div class="medsos">
-              <div class="item">
+            <div class="container">
+              <div class="row">
                 <a
-                  class="item-observer hidden"
+                  class="item-observer hidden col-3 fs-3 text-black"
                   href="https://instagram.com/harismzkki"
                   target="_blank"
                 >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a
-                  class="item-observer hidden"
+                  class="item-observer hidden col-3 fs-3 text-black"
                   href="https://www.linkedin.com/in/harismzkki/"
                   target="_blank"
                 >
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
                 <a
-                  class="item-observer hidden"
+                  class="item-observer hidden col-3 fs-3 text-black"
                   href="https://github.com/mzkki"
                   target="_blank"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
                 <a
-                  class="item-observer hidden"
+                  class="item-observer hidden col-3 fs-3 text-black"
                   href="https://wa.me/+628115430120?text=Halo,+harismzkki"
                   target="_blank"
                 >
@@ -75,7 +117,7 @@
               </div>
             </div>
           </div>
-          <aside class="row">
+          <aside class="col-sm-6">
             <img
               src="assets/image/me2.png"
               alt="Foto saya"
