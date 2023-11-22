@@ -1,7 +1,7 @@
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(100%);
+  transform: translateY(20%);
   transition: all 2s;
 }
 
@@ -69,8 +69,11 @@
 .picture.hidden:nth-child(6) {
   transition-delay: 1200ms;
 }
+.picture.hidden:nth-child(7) {
+  transition-delay: 1400ms;
+}
 
-.show {
+.showHidden {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
