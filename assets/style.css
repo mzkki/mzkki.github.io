@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
   --dark: #adc4ce;
   --light: aliceblue;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -9,11 +12,108 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins' !important;
+  height: 100vh;
 }
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #475569;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
 .main-picture {
-  width: 90%;
+  width: 70%;
+}
+
+.about-picture-section {
+  position: relative;
+}
+
+.about-image {
+  width: 60%;
+}
+
+.about-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(34%);
+  z-index: -1;
 }
 
 header {
@@ -21,5 +121,61 @@ header {
 }
 
 .jumbotron {
-  height: 95vh;
+  height: 70vh;
+  margin: 10vh 0 10vh 0;
+}
+
+.galleryJumbotron {
+  height: 70%;
+  margin: 4% 0 8% 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .about-bg-image {
+    transform: scale(0.75);
+    top: -20%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-bg-image {
+    transform: scale(0.5);
+    top: -50%;
+    left: -5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-justify {
+    text-align: center;
+  }
+  .about-bg-image {
+    transform: scale(0.6);
+    top: -30%;
+    left: 5%;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .galleryJumbotron {
+    height: 70%;
+    margin: 0 0 12% 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-justify {
+    text-align: center;
+  }
+  .about-bg-image {
+    transform: scale(0.5);
+    top: -50%;
+    left: -10%;
+  }
 }

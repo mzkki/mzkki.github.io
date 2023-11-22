@@ -33,10 +33,10 @@
       }
     </style>
   </head>
-  <body style="background-color: aliceblue">
+  <body>
     <div id="preloader"></div>
     <header>
-      <nav class="navbar sticky-top navbar-expand-sm">
+      <nav class="navbar sticky-top navbar-expand-sm bg-white">
         <div class="container justify-content-between">
           <a class="navbar-brand fw-semibold" href="#">Haris</a>
           <button
@@ -56,10 +56,10 @@
           >
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" href="">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
@@ -76,58 +76,60 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="row jumbotron align-items-center">
-          <div class="col-sm-6 text-center text-sm-start order-last">
-            <h1 class="main-observer main-hidden">Hi, I am</h1>
-            <h1 class="main-observer main-hidden">Haris Muzakki Indra</h1>
-            <p class="main-observer main-hidden">
-              I am just an ordinary people who interest in technology
-            </p>
-            <div class="container">
-              <div class="row">
-                <a
-                  class="item-observer hidden col-3 fs-3 text-black"
-                  href="https://instagram.com/harismzkki"
-                  target="_blank"
+      <article class="about-section" id="about">
+        <div class="container">
+          <div class="row jumbotron align-items-center">
+            <div class="col-sm-6 text-center text-sm-start">
+              <h2
+                class="text-sm-start my-3 main-observer main-hidden"
+                id="about"
+              >
+                About Me
+              </h2>
+              <p
+                class="text-justify text-secondary mx-sm-0 mx-3 main-observer main-hidden"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                quae ea voluptas eligendi natus dolor dolorum laborum
+                perferendis adipisci, quis minima quibusdam quod voluptatem illo
+                sapiente voluptate! Culpa qui cumque necessitatibus soluta quis
+                eaque. Id neque numquam illo error vero.
+              </p>
+              <a
+                href="assets/Haris Muzakki - Programmer Web.pdf"
+                download
+                class="btn btn-outline-secondary item-observer hidden"
+                >Download CV</a
+              >
+            </div>
+            <div
+              class="col-sm-6 about-picture-section text-center order-first order-sm-last"
+            >
+              <img
+                src="assets/image/me_transparent_bright.png"
+                alt="Personal Picture"
+                class="about-image picture-hidden"
+              />
+              <span class="about-bg-image picture-hidden">
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a
-                  class="item-observer hidden col-3 fs-3 text-black"
-                  href="https://www.linkedin.com/in/harismzkki/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a
-                  class="item-observer hidden col-3 fs-3 text-black"
-                  href="https://github.com/mzkki"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a
-                  class="item-observer hidden col-3 fs-3 text-black"
-                  href="https://wa.me/+628115430120?text=Halo,+harismzkki"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </div>
+                  <path
+                    fill="aliceblue"
+                    d="M43.3,-46.6C58.9,-38.5,76.1,-27.5,82.1,-11.8C88.1,4,82.9,24.4,72.1,40.2C61.3,56,44.9,67.3,27.4,72.4C9.9,77.4,-8.7,76.3,-26.5,70.8C-44.4,65.2,-61.3,55.2,-69.8,40.4C-78.2,25.6,-78.2,5.9,-74.3,-12.6C-70.5,-31.2,-63,-48.6,-49.9,-57.1C-36.9,-65.6,-18.5,-65.2,-2.3,-62.4C13.9,-59.7,27.7,-54.6,43.3,-46.6Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
-          <aside class="col-sm-6 text-center">
-            <img
-              src="assets/image/me2.png"
-              alt="Foto saya"
-              class="main-picture picture-hidden"
-            />
-          </aside>
         </div>
-      </div>
+      </article>
     </main>
-    <footer style="background-color: aliceblue">
+    <footer>
       <div class="container">
         <div class="row text-center">
           <div class="col">
