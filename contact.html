@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website - Contact Me</title>
+    <title>Hello, World!</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/oberserver.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <script
       src="https://kit.fontawesome.com/412caee2e0.js"
       crossorigin="anonymous"
@@ -26,10 +27,117 @@
       href="assets/image/rounded320.png"
       type="image/x-icon"
     />
+    <style>
+      * {
+        font-family: 'Poppins';
+      }
+    </style>
   </head>
-  <body style="display: flex; flex-direction: column">
+  <body>
     <div id="preloader"></div>
-
+    <header>
+      <nav class="navbar sticky-top navbar-expand-sm bg-white">
+        <div class="container justify-content-between">
+          <a class="navbar-brand fw-semibold" href="#">Haris</a>
+          <button
+            class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row jumbotron align-items-center justify-content-center">
+          <div
+            class="card border-0 shadow-sm rounded-3"
+            style="width: 32rem; height: 26rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title text-center mb-4">Contact Me</h5>
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control border-0 shadow-sm"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-sm"
+                    id="floatingName"
+                    placeholder="Name"
+                  />
+                  <label for="floatingName">Name</label>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control shadow-sm border-0"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-success mt-3" type="button">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <p>
+              &copy; 2023 Made with <i class="fa-solid fa-heart"></i> By Haris
+              Muzakki Indra
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="assets/active.js"></script>
     <script src="assets/scroll.js"></script>
     <script src="assets/observer.js"></script>
